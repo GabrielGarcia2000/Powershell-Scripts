@@ -13,7 +13,7 @@
 
 ###
 ### Example 
-### PS C:\> C:\PowershellProd\SQLInstancesSecuritySysadminReport\SQLInstancesSecuritySysadminReport.ps1
+### PS C:\> C:\Scripts\SQLInstancesSecuritySysadminReport\SQLInstancesSecuritySysadminReport.ps1
 ###
 
 ### Host Name
@@ -33,13 +33,13 @@ $objExcelApp.DisplayAlerts = $False
 $objWorkbook = $objExcelApp.Workbooks.Add()
 $objWorksheet = $objExcelApp.Worksheets.Item(1)
 $intRow = 1
-$strOutFileName = "C:\PowerShellProd\SQLInstancesSecuritySysadminReport\Archive\SQLInstancesSecuritySysadminReport$(get-date -f yyyy-MM-dd-HHmmss).xlsx"
+$strOutFileName = "C:\Scripts\SQLInstancesSecuritySysadminReport\Archive\SQLInstancesSecuritySysadminReport$(get-date -f yyyy-MM-dd-HHmmss).xlsx"
 
 ### Variable
 $CheckTime = get-Date #-Format "yyyy-MM-dd hh:mm:ss"
 
 ### Output file variable
-$strTxtInFileName = "C:\PowerShellProd\SQLInstancesSecuritySysadminReport\SQL_Servers.txt"
+$strTxtInFileName = "C:\Scripts\SQLInstancesSecuritySysadminReport\SQL_Servers.txt"
 ### File to upload to MS SQL table
 ### $strOutFile   = "\\FileServerName\InputFiles\tblSecurityAuditInventory.xlsx"
 
